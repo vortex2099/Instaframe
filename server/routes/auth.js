@@ -8,9 +8,7 @@ const { JWT_SECRET } = require('../keys')
 const requireLogin = require('../middleware/requireLogin')
 
 
-router.get('/protected', requireLogin, (req, res) => {
-    res.send("hello")
-})
+
 
 
 
