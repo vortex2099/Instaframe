@@ -45,7 +45,7 @@ const NavBar = () => {
 
     return (
         <nav>
-            <div className="nav-wrapper white">
+            <div className="nav-wrapper #ff8a80 red accent-1">
                 <Link to={state ? "/" : "/signin"} className="brand-logo left">Instaframe</Link>
                 <ul id="nav-mobile" className="right">
                     {renderList()}
