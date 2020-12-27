@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { UserContext } from '../../App'
+// import img from "Instaframe.jpg"
 import M from 'materialize-css'
 
 
@@ -45,30 +46,40 @@ const SignIn = () => {
             })
     }
     return (
-        <div className="mycard">
-            <div className="card auth-card input-field">
-                <h2>Instaframe</h2>
-                <input
-                    type="text"
-                    placeholder="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+        <div className="container">
+            <div className="row">
+                <div className="col ">
+                    {/* // <img src={require(img)} alt="Girl in a jacket" width="500" height="600" /> */}
+                </div>
+                <div className="col">
+                    <div className="mycard">
+                        <div className="card auth-card input-field">
+                            <h2>Instaframe</h2>
+                            <input
+                                type="text"
+                                placeholder="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
 
-                />
-                <input
-                    type="password"
-                    placeholder="password"
-                    value={password}
-                    onChange={(e) => setPasword(e.target.value)}
-                />
-                <button className="btn waves-effect waves-light #f44336 red darken-1"
-                    onClick={() => PostData()}
-                >
-                    Login
+                            />
+                            <input
+                                type="password"
+                                placeholder="password"
+                                value={password}
+                                onChange={(e) => setPasword(e.target.value)}
+                            />
+                            <button className="btn waves-effect waves-light #f44336 red darken-1"
+                                onClick={() => PostData()}
+                            >
+                                Login
             </button>
-                <h5>
-                    <Link to="/signup">Don't have an account ?</Link>
-                </h5>
+                            <h5>
+                                <Link to="/signup">Don't have an account ?</Link>
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
