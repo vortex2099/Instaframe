@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { UserContext } from '../../App'
-// import img from "Instaframe.jpg"
+import img from "./Instaframe.jpg"
 import M from 'materialize-css'
 
 
@@ -49,7 +49,7 @@ const SignIn = () => {
         <div className="container">
             <div className="row">
                 <div className="col ">
-                    {/* // <img src={require(img)} alt="Girl in a jacket" width="500" height="600" /> */}
+                    <img src={img} alt="Girl in a jacket" width="500" height="600" />
                 </div>
                 <div className="col">
                     <div className="mycard">

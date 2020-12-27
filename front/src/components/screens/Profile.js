@@ -16,6 +16,7 @@ const Profile = () => {
                 setPics(result.mypost)
             })
     }, [])
+
     return (
 
         <div style={{ maxWidth: "550px", margin: "0px auto" }}>
@@ -49,15 +50,7 @@ const Profile = () => {
                     </div>
                 </div>
 
-                <div className="file-field input-field" style={{ margin: "10px" }}>
-                    <div className="btn #f44336 red darken-1">
-                        <span>Update pic</span>
-                        <input type="file" />
-                    </div>
-                    <div className="file-path-wrapper">
-                        <input className="file-path validate" type="text" />
-                    </div>
-                </div>
+
             </div>
             <div className="gallery">
                 {
